@@ -20,13 +20,13 @@ export default function PagesScreen(props) {
   return (
     <View style={styles.container}>
       <View style={styles.row}>
+          <TouchableOpacity onPress={() => props.navigate({ routeName: 'Gallery' })} style={styles.item}>
+              <Image resizeMode="contain" source={galleryIcon} style={styles.itemImage} />
+              <Text style={styles.itemText}>Upload picture</Text>
+          </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigate({ routeName: 'Charts' })} style={styles.item}>
           <Image resizeMode="contain" source={chartIcon} style={styles.itemImage} />
           <Text style={styles.itemText}>Charts</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigate({ routeName: 'Gallery' })} style={styles.item}>
-          <Image resizeMode="contain" source={galleryIcon} style={styles.itemImage} />
-          <Text style={styles.itemText}>Gallery</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigate({ routeName: 'Profile' })} style={styles.item}>
           <Image resizeMode="contain" source={profileIcon} style={styles.itemImage} />
@@ -34,9 +34,9 @@ export default function PagesScreen(props) {
         </TouchableOpacity>
       </View>
       <View style={styles.row}>
-        <TouchableOpacity onPress={() => props.navigate({ routeName: 'Chat' })} style={styles.item}>
+        <TouchableOpacity onPress={() => props.navigate({ routeName: 'Questions' })} style={styles.item}>
           <Image resizeMode="contain" source={chatIcon} style={styles.itemImage} />
-          <Text style={styles.itemText}>Chats</Text>
+          <Text style={styles.itemText}>Notes</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigate({ routeName: 'Calendar' })} style={styles.item}>
           <Image resizeMode="contain" source={calendarIcon} style={styles.itemImage} />

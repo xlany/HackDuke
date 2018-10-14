@@ -28,36 +28,36 @@ export default function AvailableInFullVersionScreen(props) {
       source={require('../../assets/images/background.png')}
       style={styles.container}
     >
-      <Image
-        source={require('../../assets/images/RNS_nerd.png')}
-        style={styles.nerdImage}
-      />
+      {/*<Image*/}
+        {/*source={require('../../assets/images/RNS_nerd.png')}*/}
+        {/*style={styles.nerdImage}*/}
+      {/*/>*/}
 
       <View style={styles.textContainer}>
-        <Text style={styles.availableText}>Available</Text>
-        <Text style={styles.availableText}>in</Text>
-        <Text style={styles.availableText}>Full Version</Text>
+        <Text style={styles.availableText}>Rxminder</Text>
+        <Text style={styles.availableText}>coming</Text>
+        <Text style={styles.availableText}>soon!:)</Text>
       </View>
 
-      <View style={styles.buttonsContainer}>
-        <Button
-          large
-          secondary
-          rounded
-          style={styles.button}
-          caption="Purchase Now"
-          onPress={() => handleClick()}
-        />
+      {/*<View style={styles.buttonsContainer}>*/}
+        {/*<Button*/}
+          {/*large*/}
+          {/*secondary*/}
+          {/*rounded*/}
+          {/*style={styles.button}*/}
+          {/*caption="Purchase Now"*/}
+          {/*onPress={() => handleClick()}*/}
+      {/*/>*/}
 
-        <Button
-          large
-          bordered
-          rounded
-          style={styles.button}
-          caption="Later"
-          onPress={() => props.navigation.goBack()}
-        />
-      </View>
+          {/*<Button*/}
+              {/*large*/}
+              {/*bordered*/}
+              {/*rounded*/}
+              {/*style={styles.button}*/}
+              {/*caption="Later"*/}
+              {/*onPress={() => props.navigation.goBack()}*/}
+          {/*/>*/}
+      {/*</View>*/}
     </ImageBackground>
   )
 }

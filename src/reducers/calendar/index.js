@@ -21,9 +21,11 @@ function itemsLoadingFailed() {
   };
 }
 
-const names = ['Max', 'Philip', 'Alex', 'Irina', 'Vovan'];
+// const names = ['Max', 'Philip', 'Alex', 'Irina', 'Vovan'];
+const names = ['Esidrix (high blood pressure)', 'Calcium supplements', 'Levoxyl (hyperthyroxine)', 'Allergy medication', 'Amoxil (antibiotic)'];
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-const labels = ['Urgent', 'Interview'];
+//const labels = ['Urgent', 'Interview'];
+const labels = ['Refill', 'Low'];
 
 export function loadItems(day) {
   // Do items loading here
@@ -40,8 +42,9 @@ export function loadItems(day) {
         const numItems = randomNumber(0, 5);
         for (let j = 0; j < numItems; j++) {
           items[strTime].push({
-            name: `Meeting with ${names[randomNumber(0, 4)]}`,
-            time: `${randomNumber(0, 24)}:${randomNumber(0, 60)}`,
+            name: `Take ${names[randomNumber(0, 4)]}`,
+            // time: `${randomNumber(0, 24)}:${randomNumber(0, 60)}`,
+            time: `${randomNumber(0, 24)}:00`,
             labels: randomNumber(0, 1) ? [labels[randomNumber(0, 1)]] : [],
           });
         }
