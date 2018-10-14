@@ -89,6 +89,8 @@ export default class AuthScreen extends React.Component {
             resizeMode="contain"
             style={[styles.logo, this.state.isKeyboardVisible && { height: 90 }, this.fadeIn(0)]}
             source={require('../../assets/images/white-logo.png')}
+            width={400}
+            height={200}
           />
         </View>
 

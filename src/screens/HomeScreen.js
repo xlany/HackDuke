@@ -39,17 +39,19 @@ export default function HomeScreen({ isExtended, setIsExtended }) {
           <Text size={20} white>Home</Text>
         </View>
         <View style={styles.section}>
-          <Text color="#19e7f7" size={15}>The smartest Way to build your mobile app</Text>
-          <Text size={30} bold white style={styles.title}>React Native Starter</Text>
+          {/*<Text color="#19e7f7" size={15}>The smartest Way to build your mobile app</Text>*/}
+          <Text size={50} bold white style={styles.title}>Rxminder</Text>
         </View>
         <View style={[styles.section, styles.sectionLarge]}>
-          <Text color="#19e7f7" hCenter size={15} style={styles.description}> A powerful starter project that bootstraps development of your mobile application and saves you $20 000*</Text>
+          {/*<Text color="#19e7f7" hCenter size={15} style={styles.description}> A powerful starter project that bootstraps development of your mobile application and saves you $20 000*</Text>*/}
+          <Text size={30} bold white style={styles.title}>One reminder app for taking and refilling prescriptions</Text>
           <View style={styles.priceContainer}>
             <View style={{ flexDirection: 'row' }}>
-              <Text white bold size={50} style={styles.price}>{isExtended ? '$199.95' : '$49.95'}</Text>
+              {/*<Text white bold size={50} style={styles.price}>{isExtended ? '$199.95' : '$49.95'}</Text>*/}
+                {/*<Text size={15} bold white style={styles.title}>Next prescription refill: 3 weeks</Text>*/}
             </View>
             <TouchableOpacity style={styles.priceLink} onPress={() => isExtended ? setIsExtended(false) : setIsExtended(true)}>
-              <Text white size={14}>{isExtended ? 'Multiple Applications License' : 'Single Application License'}</Text>
+              {/*<Text white size={14}>{isExtended ? 'Multiple Applications License' : 'Single Application License'}</Text>*/}
             </TouchableOpacity>
           </View>
         </View>

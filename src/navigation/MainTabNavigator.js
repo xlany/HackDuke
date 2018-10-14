@@ -10,6 +10,7 @@ import CalendarScreen from '../containers/CalendarScreen';
 import GridsScreen from '../containers/GridsScreen';
 import PagesScreen from '../containers/PagesScreen';
 import ComponentsScreen from '../containers/ComponentsScreen';
+import GalleryScreen from "../containers/GalleryScreen";
 
 const iconHome = require('../../assets/images/tabbar/home.png');
 const iconCalendar = require('../../assets/images/tabbar/calendar.png');
@@ -87,7 +88,8 @@ export default TabNavigator(
             <Image
               style={styles.headerImage}
               source={hederBackground} />
-            <Text style={styles.headerCaption}>Grids</Text>
+            {/*<Text style={styles.headerCaption}>Grids</Text>*/}
+             <Text style={styles.headerCaption}>Notes</Text>
           </View>
         ),
       },
@@ -106,14 +108,14 @@ export default TabNavigator(
       },
     },
     Components: {
-      screen: ComponentsScreen,
+      screen: GalleryScreen,
       navigationOptions: {
         header: (
           <View style={styles.headerContainer}>
             <Image
               style={styles.headerImage}
               source={hederBackground} />
-            <Text style={styles.headerCaption}>Components</Text>
+            <Text style={styles.headerCaption}>Take picture</Text>
           </View>
         ),
       },

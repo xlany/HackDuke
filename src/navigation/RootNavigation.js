@@ -9,7 +9,7 @@ import { StackNavigator } from 'react-navigation';
 import MainTabNavigator from './MainTabNavigator';
 
 import GalleryScreen from '../containers/GalleryScreen';
-
+import GridsScreen from '../containers/GridsScreen';
 // To use this screens please see the full version at https://reactnativestarter.com
 // import ProfileScreen from '../containers/ProfileScreen';
 // import ArticleScreen from '../containers/ArticleScreen';
